@@ -32,7 +32,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Production
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
-      ConnectionStrings__Database: Host=db;Port=5432;Database=taskflow;Username=taskflow;Password=taskflow
+      ConnectionStrings__Database: Host=db;Port=5432;Database=taskflow;Username=taskflow;Password=taskflow;GSS Encryption Mode=Disable
       # With Redis configured, SignalR messages are shared across API instances (scale-out ready).
       ConnectionStrings__Redis: redis:6379
       Jwt__SigningKey: ${JWT_SIGNING_KEY:-local-demo-signing-key-change-me-0123456789}
